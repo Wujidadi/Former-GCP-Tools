@@ -1,0 +1,26 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.13",
+    "decimal.js": "^10.5.0",
+    "guid-typescript": "^1.0.9",
+    "nuxt": "^3.15.3",
+    "vue": "latest",
+    "vue-router": "latest"
+  },
+  "devDependencies": {
+    "@types/decimal.js": "^7.4.3",
+    "@unocss/nuxt": "^65.4.3",
+    "sass-embedded": "^1.83.4",
+    "unocss": "^65.4.3"
+  }
+}
