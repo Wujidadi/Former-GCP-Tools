@@ -53,13 +53,13 @@
 5. 啟用 Apache 模組與站台：
 
    ```bash
-   sudo a2enmod headers
+   sudo a2enmod headers rewrite
    sudo install -m 644 deploy/apache/former-gcp-tools.conf /etc/apache2/sites-available/
    sudo a2ensite former-gcp-tools
    sudo apache2ctl configtest && sudo systemctl reload apache2
    ```
 
-   Ubuntu 預設未啟用 `mod_headers`；`mod_deflate` 預設已啟用，負責壓縮回應。
+   Ubuntu 預設未啟用 `mod_headers` 與 `mod_rewrite`；`mod_deflate` 預設已啟用，負責壓縮回應。
 
 6. 若啟用了 `ufw`，開放服務埠：
 
